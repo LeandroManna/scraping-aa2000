@@ -18,8 +18,8 @@ El proyecto utiliza Python para realizar el scraping de la página de AA2000 y o
 
 1. Clona el repositorio en tu máquina local.
 2. Instala las dependencias de Python necesarias para el proyecto.
-3. Ejecuta el archivo `arribos.py` para realizar el scraping de la página de AA2000.
-4. Ejecuta el archivo `arribos.html` para ver la información obtenida en la página web.
+3. Ejecuta el archivo `vuelos.py` para realizar el scraping de la página de AA2000.
+4. Ejecuta el archivo `vuelos.html` para ver la información obtenida en la página web.
 
 
 ## Autores
