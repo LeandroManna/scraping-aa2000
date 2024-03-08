@@ -1,0 +1,59 @@
+{
+    "Título": "Partidas desde Jujuy",
+    "Datos": [
+        {
+            "Hora": "07:30",
+            "Vuelo": "AR 1471",
+            "Línea Aérea": "Aerolíneas Argentinas",
+            "Ciudad": "Aeroparque",
+            "Estima": "",
+            "Terminal": "P",
+            "Estado": "Despegado (07:29)"
+        },
+        {
+            "Hora": "09:00",
+            "Vuelo": "AR 1523",
+            "Línea Aérea": "Aerolíneas Argentinas",
+            "Ciudad": "Córdoba",
+            "Estima": "09:00",
+            "Terminal": "P",
+            "Estado": "Despegado (08:58)"
+        },
+        {
+            "Hora": "10:25",
+            "Vuelo": "FO 5193",
+            "Línea Aérea": "Flybondi",
+            "Ciudad": "Aeroparque",
+            "Estima": "16:35",
+            "Terminal": "P",
+            "Estado": "Despegado (16:48)"
+        },
+        {
+            "Hora": "19:45",
+            "Vuelo": "AR 1475",
+            "Línea Aérea": "Aerolíneas Argentinas",
+            "Ciudad": "Aeroparque",
+            "Estima": "19:45",
+            "Terminal": "P",
+            "Estado": "Despegado (19:47)"
+        },
+        {
+            "Hora": "21:00",
+            "Vuelo": "AR 1473",
+            "Línea Aérea": "Aerolíneas Argentinas",
+            "Ciudad": "Aeroparque",
+            "Estima": "21:05",
+            "Terminal": "P",
+            "Estado": "Despegado (21:30)"
+        },
+        {
+            "Hora": "21:50",
+            "Vuelo": "FO 5191",
+            "Línea Aérea": "Flybondi",
+            "Ciudad": "Ezeiza",
+            "Estima": "22:20",
+            "Terminal": "P",
+            "Estado": "Embarcando"
+        }
+    ]
+}

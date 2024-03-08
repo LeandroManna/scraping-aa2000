@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arribos y Partidas a Jujuy</title>
+    <style>
+        table {
+            font-family: Arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h1>Arribos a Jujuy</h1>
+    <table id="arribosTable">
+        <thead>
+            <tr>
+                <th>Hora</th>
+                <th>Vuelo</th>
+                <th>Línea Aérea</th>
+                <th>Ciudad</th>
+                <th>Estima</th>
+                <th>Terminal</th>
+                <th>Estado</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Datos se cargarán aquí desde JavaScript -->
+        </tbody>
+    </table>
+
+    <h1>Partidas desde Jujuy</h1>
+    <table id="partidasTable">
+        <thead>
+            <tr>
+                <th>Hora</th>
+                <th>Vuelo</th>
+                <th>Línea Aérea</th>
+                <th>Ciudad</th>
+                <th>Estima</th>
+                <th>Terminal</th>
+                <th>Estado</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Datos se cargarán aquí desde JavaScript -->
+        </tbody>
+    </table>
+
+    <!-- ARRIBOS -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Obtén la tabla
+            var table = document.getElementById("arribosTable");
+            var tbody = table.querySelector("tbody");
+
+            // Cargar datos desde el archivo JSON generado por vuelos.py
+            fetch("arribos_jujuy.json")
+                .then(response => response.json())
+                .then(data => {
+                    data.Datos.forEach(function (dato) {
+                        var row = tbody.insertRow();
+                        var cellHora = row.insertCell(0);
+                        var cellVuelo = row.insertCell(1);
+                        var cellLineaAerea = row.insertCell(2);
+                        var cellCiudad = row.insertCell(3);
+                        var cellEstima = row.insertCell(4);
+                        var cellTerminal = row.insertCell(5);
+                        var cellEstado = row.insertCell(6);
+                    
+                        cellHora.innerHTML = dato.Hora;
+                        cellVuelo.innerHTML = dato.Vuelo;
+                        cellLineaAerea.innerHTML = dato["Línea Aérea"];
+                        cellCiudad.innerHTML = dato.Ciudad;
+                        cellEstima.innerHTML = dato.Estima;
+                        cellTerminal.innerHTML = dato.Terminal;
+                        cellEstado.innerHTML = dato.Estado;
+                    });
+                })
+                .catch(error => {
+                    console.error("Error al cargar el archivo JSON:", error);
+                });
+        });
+    </script>
+
+
+    <!-- PARTIDAS -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Obtén la tabla
+            var table = document.getElementById("partidasTable");
+            var tbody = table.querySelector("tbody");
+
+            // Cargar datos desde el archivo JSON generado por vuelos.py
+            fetch("partidas_jujuy.json")
+                .then(response => response.json())
+                .then(data => {
+                    data.Datos.forEach(function (dato) {
+                        var row = tbody.insertRow();
+                        var cellHora = row.insertCell(0);
+                        var cellVuelo = row.insertCell(1);
+                        var cellLineaAerea = row.insertCell(2);
+                        var cellCiudad = row.insertCell(3);
+                        var cellEstima = row.insertCell(4);
+                        var cellTerminal = row.insertCell(5);
+                        var cellEstado = row.insertCell(6);
+                    
+                        cellHora.innerHTML = dato.Hora;
+                        cellVuelo.innerHTML = dato.Vuelo;
+                        cellLineaAerea.innerHTML = dato["Línea Aérea"];
+                        cellCiudad.innerHTML = dato.Ciudad;
+                        cellEstima.innerHTML = dato.Estima;
+                        cellTerminal.innerHTML = dato.Terminal;
+                        cellEstado.innerHTML = dato.Estado;
+                    });
+                })
+                .catch(error => {
+                    console.error("Error al cargar el archivo JSON:", error);
+                });
+        });
+    </script>
+</body>
+</html>
