@@ -1,59 +1,68 @@
 {
-    "Título": "Partidas desde Jujuy",
+    "Titulo": "Partidas desde Jujuy",
     "Datos": [
         {
-            "Hora": "07:30",
-            "Vuelo": "AR 1471",
-            "Línea Aérea": "Aerolíneas Argentinas",
+            "Hora": "08:00",
+            "Vuelo": "AR 1513",
+            "Linea Aerea": "Aerolineas Argentinas",
             "Ciudad": "Aeroparque",
             "Estima": "",
             "Terminal": "P",
-            "Estado": "Despegado (07:29)"
+            "Estado": "Despegado (07:56)"
         },
         {
-            "Hora": "09:00",
-            "Vuelo": "AR 1523",
-            "Línea Aérea": "Aerolíneas Argentinas",
+            "Hora": "09:20",
+            "Vuelo": "AR 1565",
+            "Linea Aerea": "Aerolineas Argentinas",
             "Ciudad": "Córdoba",
-            "Estima": "09:00",
+            "Estima": "",
             "Terminal": "P",
-            "Estado": "Despegado (08:58)"
+            "Estado": "Despegado (09:45)"
         },
         {
-            "Hora": "10:25",
+            "Hora": "10:45",
             "Vuelo": "FO 5193",
-            "Línea Aérea": "Flybondi",
+            "Linea Aerea": "Flybondi",
             "Ciudad": "Aeroparque",
-            "Estima": "16:35",
+            "Estima": "",
             "Terminal": "P",
-            "Estado": "Despegado (16:48)"
+            "Estado": "Despegado (10:45)"
         },
         {
-            "Hora": "19:45",
-            "Vuelo": "AR 1475",
-            "Línea Aérea": "Aerolíneas Argentinas",
+            "Hora": "17:57",
+            "Vuelo": "WJ 3251",
+            "Linea Aerea": "Jet Smart",
             "Ciudad": "Aeroparque",
-            "Estima": "19:45",
+            "Estima": "",
             "Terminal": "P",
-            "Estado": "Despegado (19:47)"
+            "Estado": "Despegado (18:07)"
+        },
+        {
+            "Hora": "20:00",
+            "Vuelo": "AR 1515",
+            "Linea Aerea": "Aerolineas Argentinas",
+            "Ciudad": "Aeroparque",
+            "Estima": "20:00",
+            "Terminal": "P",
+            "Estado": "Cerrado"
         },
         {
             "Hora": "21:00",
-            "Vuelo": "AR 1473",
-            "Línea Aérea": "Aerolíneas Argentinas",
+            "Vuelo": "AR 1519",
+            "Linea Aerea": "Aerolineas Argentinas",
             "Ciudad": "Aeroparque",
-            "Estima": "21:05",
+            "Estima": "21:00",
             "Terminal": "P",
-            "Estado": "Despegado (21:30)"
+            "Estado": "Estima"
         },
         {
             "Hora": "21:50",
             "Vuelo": "FO 5191",
-            "Línea Aérea": "Flybondi",
+            "Linea Aerea": "Flybondi",
             "Ciudad": "Ezeiza",
-            "Estima": "22:20",
+            "Estima": "21:50",
             "Terminal": "P",
-            "Estado": "Cerrado"
+            "Estado": "Estima"
         }
     ]
 }
