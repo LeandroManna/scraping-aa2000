@@ -1,68 +1,51 @@
 {
     "Titulo": "Partidas desde Jujuy",
+    "Fecha_Modificacion": "20/04/2024 10:10",
     "Datos": [
         {
-            "Hora": "08:00",
+            "Hora": "07:45",
             "Vuelo": "AR 1513",
             "Linea Aerea": "Aerolineas Argentinas",
             "Ciudad": "Aeroparque",
             "Estima": "",
             "Terminal": "P",
-            "Estado": "Despegado (07:56)"
+            "Estado": "Despegado (08:25)"
         },
         {
-            "Hora": "09:20",
-            "Vuelo": "AR 1565",
-            "Linea Aerea": "Aerolineas Argentinas",
-            "Ciudad": "Córdoba",
-            "Estima": "",
-            "Terminal": "P",
-            "Estado": "Despegado (09:45)"
-        },
-        {
-            "Hora": "10:45",
+            "Hora": "08:30",
             "Vuelo": "FO 5193",
             "Linea Aerea": "Flybondi",
             "Ciudad": "Aeroparque",
             "Estima": "",
             "Terminal": "P",
-            "Estado": "Despegado (10:45)"
+            "Estado": "Despegado (08:45)"
         },
         {
-            "Hora": "17:57",
+            "Hora": "19:55",
+            "Vuelo": "AR 1519",
+            "Linea Aerea": "Aerolineas Argentinas",
+            "Ciudad": "Aeroparque",
+            "Estima": "",
+            "Terminal": "P",
+            "Estado": "En Horario"
+        },
+        {
+            "Hora": "20:46",
             "Vuelo": "WJ 3251",
             "Linea Aerea": "Jet Smart",
             "Ciudad": "Aeroparque",
             "Estima": "",
             "Terminal": "P",
-            "Estado": "Despegado (18:07)"
-        },
-        {
-            "Hora": "20:00",
-            "Vuelo": "AR 1515",
-            "Linea Aerea": "Aerolineas Argentinas",
-            "Ciudad": "Aeroparque",
-            "Estima": "20:00",
-            "Terminal": "P",
-            "Estado": "Cerrado"
-        },
-        {
-            "Hora": "21:00",
-            "Vuelo": "AR 1519",
-            "Linea Aerea": "Aerolineas Argentinas",
-            "Ciudad": "Aeroparque",
-            "Estima": "21:00",
-            "Terminal": "P",
-            "Estado": "Estima"
+            "Estado": "En Horario"
         },
         {
             "Hora": "21:50",
-            "Vuelo": "FO 5191",
+            "Vuelo": "FO 5197",
             "Linea Aerea": "Flybondi",
             "Ciudad": "Ezeiza",
-            "Estima": "21:50",
+            "Estima": "",
             "Terminal": "P",
-            "Estado": "Estima"
+            "Estado": "En Horario"
         }
     ]
 }

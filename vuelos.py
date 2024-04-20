@@ -1,6 +1,8 @@
 import requests
 from bs4 import BeautifulSoup
 import json
+import os
+from datetime import datetime
 
 def extraer_datos(url, tipo):
     # Diccionario de mapeo de códigos de línea aérea a nombres de aerolíneas
@@ -28,9 +30,11 @@ def extraer_datos(url, tipo):
         if tipo == "arribos":
             div_vuelos = soup.find("div", {"id": "arribos"})
             titulo = "Arribos a Jujuy"
+            archivo = "arribos_jujuy.json"
         elif tipo == "partidas":
             div_vuelos = soup.find("div", {"id": "partidas"})
             titulo = "Partidas desde Jujuy"
+            archivo = "partidas_jujuy.json"
 
         # Verifica si se encontró el div de vuelos
         if div_vuelos:
@@ -82,17 +86,22 @@ def extraer_datos(url, tipo):
                             "Estado": estado
                         })
 
-                    # Crea un diccionario con el título y los datos
+                    # Obtiene la fecha y hora de la última modificación del archivo
+                    fecha_modificacion = datetime.fromtimestamp(os.path.getmtime(archivo)).strftime('%d/%m/%Y %H:%M')
+
+                    # Crea un diccionario con el título, la fecha de modificación y los datos
                     vuelos_dict = {
                         "Titulo": titulo,
+                        "Fecha_Modificacion": fecha_modificacion,
                         "Datos": datos_vuelos
                     }
 
                     # Escribe los datos en un archivo JSON
-                    with open(f"D:/Proyectos/VUELOS/{tipo}_jujuy.json", "w", encoding="utf-8") as json_file:
+                    with open(f"D:/Proyectos/VUELOS/{archivo}", "w", encoding="utf-8") as json_file:
                         json.dump(vuelos_dict, json_file, ensure_ascii=False, indent=4)
 
-                    print(f"Los datos de {tipo} se han guardado en {tipo}_jujuy.json con el titulo '{titulo}'.")
+                    print(f"Los datos de {tipo} se han guardado en {archivo} con el titulo '{titulo}'.")
+                    print(f"Fecha y hora de la última modificación de {archivo}: {fecha_modificacion}")
                 else:
                     print(f"No se encontraron filas en la tabla de {tipo}.")
             else:
